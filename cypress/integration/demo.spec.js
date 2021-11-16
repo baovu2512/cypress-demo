@@ -15,7 +15,7 @@ describe('Test', function () {
           cy.get("h4[class^=BpkText_bpk]").parents("div[class^= Itinerary_leg]").find("svg").first().click();
           cy.get("div[class^= LegSegmentDetails_segmentDetails]").find("span").contains('SGN');
           cy.get("a[class^='CrossSellAdvertV2'][aria-label='hotels']").invoke('removeAttr', 'target').click();
-          cy.get("button[data-test-id='filterExpandButton']").click();
+//           cy.get("button[data-test-id='filterExpandButton']").click();
           cy.get("input#PR_BK_2").click();
         //  Temporary comment because of different between real browser and automated browser
         //   cy.get("buttn[data-test-id='show-result-button']").click();
